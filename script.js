@@ -26,9 +26,16 @@ function checkPassword() {
 function showBase64() {
   document.getElementById("base64Tool").style.display = "block";
   document.getElementById("passwordTool").style.display = "none";
+
+  document.getElementById("base64Btn").classList.add("active");
+  document.getElementById("passwordBtn").classList.remove("active");
 }
 
 function showPassword() {
   document.getElementById("passwordTool").style.display = "block";
   document.getElementById("base64Tool").style.display = "none";
+
+  document.getElementById("passwordBtn").classList.add("active");
+  document.getElementById("base64Btn").classList.remove("active");
 }
+
