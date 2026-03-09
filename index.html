@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Security Toolkit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Security Toolkit</h1>
+
+<div class="menu">
+<button onclick="showBase64()">Base64 Encoder</button>
+<button onclick="showPassword()">Password Checker</button>
+</div>
+
+
+<div class="container">
+
+<div class="tool" id="base64Tool">
+
+<h2>Base64 Encoder</h2>
+
+<input type="text" id="inputText" placeholder="Enter text">
+<button onclick="encode()">Encode</button>
+
+<p id="result"></p>
+
+</div>
+
+
+<div class="tool" id="passwordTool">
+
+<h2>Password Strength Checker</h2>
+
+<input type="password" id="passwordInput" placeholder="Enter password">
+<button onclick="checkPassword()">Check Strength</button>
+
+<p id="passwordResult"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
