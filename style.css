@@ -1,23 +1,43 @@
-body{
-    font-family: Arial;
-    text-align:center;
-    background:#f5f5f5;
-    }
-    
-    .menu{
-    margin-bottom:20px;
-    }
-    
-    .container{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    }
-    
-    .tool{
-    background:white;
-    padding:20px;
-    width:300px;
-    border-radius:10px;
-    display:none;
-    }
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tool {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: none;
+}
+
+.menu button {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: #bbb;
+}
+
+.menu button.active {
+  background: #4caf50;
+  color: white;
+}
